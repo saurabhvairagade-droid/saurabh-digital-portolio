@@ -31,6 +31,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
   },
+  verification: {
+    google: "mxDEvvzadHqhFp6PjAcRatiPzas6qW4joWCfmUZZi1M",
+  },
 };
 
 export const viewport = {
