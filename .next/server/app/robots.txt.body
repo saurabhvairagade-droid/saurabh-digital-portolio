@@ -1,0 +1,5 @@
+User-Agent: *
+Allow: /
+Disallow: /private
+
+Sitemap: https://saurabh-v.com/sitemap.xml
