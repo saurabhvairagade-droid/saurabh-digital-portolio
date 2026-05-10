@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   title: "Saurabh V. — React Developer & AI Voice Agent Builder",
   description: "Custom React websites and AI voice receptionists built by Saurabh V., based in Pune, India. No monthly fees. You own the code.",
   metadataBase: new URL("https://saurabh-v.com"),
+  icons: {
+    icon: '/favicon.png'
+  },
   openGraph: {
     title: "Saurabh V. — React Developer & AI Voice Agent Builder",
     description: "Custom React websites and AI voice receptionists. No monthly fees.",

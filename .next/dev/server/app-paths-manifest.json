@@ -1,6 +1,4 @@
 {
   "/page": "app/page.js",
-  "/robots.txt/route": "app/robots.txt/route.js",
-  "/services/page": "app/services/page.js",
-  "/sitemap.xml/route": "app/sitemap.xml/route.js"
+  "/portfolio/page": "app/portfolio/page.js"
 }
