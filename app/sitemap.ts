@@ -6,31 +6,31 @@ export const dynamic = 'force-static'
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://saurabh-v.com',
+      url: 'https://saurabh-web-designer-pune.netlify.app',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 1,
     },
     {
-      url: 'https://saurabh-v.com/portfolio',
+      url: 'https://saurabh-web-designer-pune.netlify.app/portfolio',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://saurabh-v.com/services',
+      url: 'https://saurabh-web-designer-pune.netlify.app/services',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: 'https://saurabh-v.com/about',
+      url: 'https://saurabh-web-designer-pune.netlify.app/about',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.5,
     },
     {
-      url: 'https://saurabh-v.com/contact',
+      url: 'https://saurabh-web-designer-pune.netlify.app/contact',
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.5,

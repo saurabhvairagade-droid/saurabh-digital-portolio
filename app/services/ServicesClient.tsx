@@ -27,7 +27,7 @@ const services = [
 
 export default function ServicesClient() {
   return (
-    <RevealWrapper className="mx-auto max-w-7xl px-6 py-24">
+    <RevealWrapper className="mx-auto max-w-7xl px-6 pt-40 pb-24">
       <div className="text-center max-w-2xl mx-auto reveal">
         <div className="text-sm text-primary uppercase tracking-widest mb-3">Services</div>
         <h1 className="text-4xl md:text-5xl font-bold">What I Build For You</h1>
@@ -45,13 +45,13 @@ export default function ServicesClient() {
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-primary/10 text-primary mb-6 group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
               <s.icon size={24} />
             </div>
-            <h3 className="text-xl font-bold">{s.title}</h3>
+            <h2 className="text-xl font-bold">{s.title}</h2>
             <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
             <div className="mt-6 text-2xl font-bold text-gradient-blue">{s.price}</div>
             <a
               href={s.href}
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="mt-6 inline-flex w-full items-center justify-center rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition"
             >
               Buy Now

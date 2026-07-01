@@ -49,7 +49,7 @@ const projects = [
 
 export default function PortfolioClient() {
   return (
-    <RevealWrapper className="mx-auto max-w-7xl px-6 py-24">
+    <RevealWrapper className="mx-auto max-w-7xl px-6 pt-40 pb-24">
       <div className="text-center max-w-2xl mx-auto reveal">
         <div className="text-sm text-primary uppercase tracking-widest mb-3">Portfolio</div>
         <h1 className="text-4xl md:text-5xl font-bold">Live Projects I Have Built</h1>
@@ -75,7 +75,7 @@ export default function PortfolioClient() {
               />
             </div>
             <div className="p-6">
-              <h3 className="text-lg font-bold">{p.title}</h3>
+              <h2 className="text-lg font-bold">{p.title}</h2>
               <p className="mt-2 text-sm text-muted-foreground">{p.desc}</p>
               <div className="mt-4 flex flex-wrap gap-2">
                 {p.tags.map((t) => (
@@ -90,7 +90,7 @@ export default function PortfolioClient() {
               <a
                 href={p.href}
                 target="_blank"
-                rel="noreferrer"
+                rel="noopener noreferrer"
                 className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-primary hover:gap-3 transition-all"
               >
                 View Live Site <ExternalLink size={14} />

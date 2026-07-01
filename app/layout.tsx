@@ -17,22 +17,29 @@ const spaceGrotesk = Space_Grotesk({
 });
 
 export const metadata: Metadata = {
-  title: "Saurabh V. — React Developer & AI Voice Agent Builder",
-  description: "Custom React websites and AI voice receptionists built by Saurabh V., based in Pune, India. No monthly fees. You own the code.",
-  metadataBase: new URL("https://saurabh-v.com"),
+  title: {
+    template: "%s | Saurabh V. — Web Designer in Pune",
+    default: "Saurabh V. — Web Designer in Pune & AI Voice Agent Builder",
+  },
+  description: "Top-rated Web Designer in Pune. I build custom React websites and AI voice receptionists for businesses in Pune and beyond. No monthly fees. You own the code.",
+  keywords: ["web designer in pune", "web design services pune", "React developer Pune", "AI voice agent builder", "freelance web designer Pune", "custom websites Pune"],
+  metadataBase: new URL("https://saurabh-web-designer-pune.netlify.app"),
+  alternates: {
+    canonical: '/',
+  },
   icons: {
     icon: '/favicon.png'
   },
   openGraph: {
-    title: "Saurabh V. — React Developer & AI Voice Agent Builder",
-    description: "Custom React websites and AI voice receptionists. No monthly fees.",
+    title: "Saurabh V. — Web Designer in Pune & AI Voice Agent Builder",
+    description: "Custom React websites and AI voice receptionists in Pune. No monthly fees.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
   },
   verification: {
-    google: "mxDEvvzadHqhFp6PjAcRatiPzas6qW4joWCfmUZZi1M",
+    google: "zIhBbGar6Graz6qWXFcC_idrrBsKOyjNxQCFAlO1iXo",
   },
 };
 
@@ -50,8 +57,28 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ProfessionalService",
+              "name": "Saurabh V. — Web Designer in Pune",
+              "image": "https://saurabh-web-designer-pune.netlify.app/headshot.jpg",
+              "url": "https://saurabh-web-designer-pune.netlify.app",
+              "description": "Top-rated Web Designer in Pune. I build custom React websites and AI voice receptionists.",
+              "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Pune",
+                "addressRegion": "Maharashtra",
+                "addressCountry": "IN"
+              },
+              "priceRange": "$$"
+            })
+          }}
+        />
         <Navbar />
-        <main className="pt-16 min-h-screen">
+        <main className="min-h-screen">
           {children}
         </main>
         <Footer />

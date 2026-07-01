@@ -1,9 +1,12 @@
-import dynamic from "next/dynamic";
+"use client";
+
 import Link from "next/link";
 import { RevealWrapper } from "@/components/RevealWrapper";
-
-const Counter = dynamic(() => import("@/components/home/Counter").then(mod => mod.Counter));
-const FloatingBubbles = dynamic(() => import("@/components/home/FloatingBubbles").then(mod => mod.FloatingBubbles));
+import { Counter } from "@/components/home/Counter";
+import { FloatingBubbles } from "@/components/home/FloatingBubbles";
+import { Glass } from "@/components/ui/glass";
+import SplitText from "@/components/SplitText";
+import ShinyText from "@/components/ShinyText";
 
 export default function Home() {
   const stats = [
@@ -19,7 +22,7 @@ export default function Home() {
       <div className="absolute inset-0 bg-hero-gradient pointer-events-none" />
       <FloatingBubbles />
 
-      <section className="relative mx-auto max-w-5xl px-6 pt-24 pb-32 text-center">
+      <section className="relative mx-auto max-w-5xl px-6 pt-40 pb-32 text-center">
         <div className="reveal inline-flex items-center gap-2 rounded-full border border-border bg-surface/50 px-4 py-1.5 text-xs text-muted-foreground mb-8">
           <span className="relative flex h-2 w-2">
             <span className="absolute inline-flex h-full w-full rounded-full bg-accent opacity-75 animate-ping" />
@@ -27,27 +30,41 @@ export default function Home() {
           </span>
           Available for new projects · Pune, India
         </div>
-        <h1 className="reveal text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
-          I Build Websites &amp; <span className="text-gradient-blue">AI Agents</span>
-          <br className="hidden md:block" /> That Work While You Sleep
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
+          <span>Professional </span>
+          <span
+            style={{
+              background: 'linear-gradient(135deg, oklch(0.85 0.13 230), oklch(0.7 0.15 250))',
+              WebkitBackgroundClip: 'text',
+              backgroundClip: 'text',
+              color: 'transparent',
+              WebkitTextFillColor: 'transparent',
+              display: 'inline-block',
+            }}
+          >
+            Web Designer in Pune
+          </span>
+          <br className="hidden md:block" />
+          <span>& AI Agent Builder</span>
         </h1>
-        <p className="reveal mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
-          Custom React websites with free hosting. AI voice receptionists that answer calls 24/7.
-          No monthly fees. No lock-in. Just results.
+        <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
+          I build custom React websites and AI voice receptionists that work while you sleep. As a freelance web designer in Pune, I offer high-performance solutions with no monthly fees.
         </p>
         <div className="reveal mt-10 flex flex-wrap gap-4 justify-center">
           <Link
             href="/services"
-            className="inline-flex items-center justify-center rounded-md bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition-all hover:-translate-y-0.5 glow-blue"
+            className="inline-flex items-center justify-center rounded-full bg-primary px-8 py-3 text-sm font-bold text-primary-foreground transition-all hover:opacity-90 hover:-translate-y-1 glow-blue"
           >
-            View My Services
+            <ShinyText text="View My Services" disabled={false} speed={3} className="custom-class" color="rgba(0,0,0,0.8)" shineColor="grey" />
           </Link>
-          <Link
-            href="/portfolio"
-            className="inline-flex items-center justify-center rounded-md border border-primary/40 bg-transparent px-6 py-3 text-sm font-semibold text-primary transition-all hover:bg-primary/10"
-          >
-            See My Work
-          </Link>
+          <Glass width="auto" height="auto" borderRadius={100} className="transition-all hover:-translate-y-1">
+            <Link
+              href="/portfolio"
+              className="inline-flex items-center justify-center px-8 py-3 text-sm font-bold text-foreground"
+            >
+              See My Work
+            </Link>
+          </Glass>
         </div>
 
         <div className="reveal mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
@@ -64,6 +81,16 @@ export default function Home() {
               </div>
             </div>
           ))}
+        </div>
+        
+        <div className="reveal mt-32 text-left bg-surface/30 border border-border rounded-2xl p-8 max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold mb-4">Premium Web Design Services in Pune</h2>
+          <p className="text-muted-foreground mb-4">
+            Are you looking for a reliable <strong>web designer in Pune</strong>? I specialize in creating bespoke, high-performance websites for startups and established businesses. Unlike traditional agencies, I build modern React applications and AI-driven solutions without tying you into expensive monthly retainers.
+          </p>
+          <p className="text-muted-foreground">
+            From technical SEO optimizations to AI voice receptionists, my custom web design services in Pune are tailored to help your brand stand out and convert visitors into loyal customers.
+          </p>
         </div>
       </section>
     </RevealWrapper>

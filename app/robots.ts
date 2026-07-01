@@ -12,6 +12,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: ['/private'],
       },
     ],
-    sitemap: 'https://saurabh-v.com/sitemap.xml',
+    sitemap: 'https://saurabh-web-designer-pune.netlify.app/sitemap.xml',
   }
 }

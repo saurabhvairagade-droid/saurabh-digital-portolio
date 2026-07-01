@@ -11,7 +11,7 @@ export default function ContactClient() {
         <div className="text-sm text-primary uppercase tracking-widest mb-3">Contact</div>
         <h1 className="text-4xl md:text-5xl font-bold">Let's Work Together</h1>
         <p className="mt-4 text-muted-foreground">
-          Tell me about your project. I reply within 24 hours.
+          Tell me about your project. As a local web designer in Pune, I reply within 24 hours.
         </p>
       </div>
 
@@ -62,7 +62,7 @@ export default function ContactClient() {
         <aside className="reveal space-y-6">
           <div className="rounded-2xl border border-border bg-surface p-6 space-y-4 card-shadow">
             <Detail icon={Mail} label="Email" value="saurabh.vairagade@gmail.com" />
-            <Detail icon={MapPin} label="Location" value="Pune, India" />
+            <Detail icon={MapPin} label="Location" value="Pune, Maharashtra, India (Serving Globally)" />
             <Detail icon={Clock} label="Response time" value="Within 24 hours" />
           </div>
 
@@ -79,7 +79,7 @@ export default function ContactClient() {
             <a
               href="https://calendly.com/saurabh-vairagade/30min"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               className="mt-4 inline-flex items-center justify-center rounded-md bg-accent px-5 py-2.5 text-sm font-semibold text-accent-foreground hover:opacity-90 transition"
             >
               Book a Call
@@ -141,7 +141,7 @@ function SocialIcon({ href, icon: Icon, label }: { href: string; icon: React.Ele
     <a
       href={href}
       target="_blank"
-      rel="noreferrer"
+      rel="noopener noreferrer"
       aria-label={label}
       className="w-11 h-11 rounded-lg border border-border bg-surface flex items-center justify-center hover:border-primary hover:text-primary transition"
     >

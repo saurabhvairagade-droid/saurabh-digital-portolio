@@ -9,7 +9,10 @@ export function Footer() {
             Saurabh <span className="text-primary">V.</span>
           </div>
           <p className="text-sm text-muted-foreground mt-2">
-            React Developer &amp; AI Voice Agent Builder
+            Web Designer in Pune &amp; AI Voice Agent Builder
+          </p>
+          <p className="text-xs text-muted-foreground mt-1">
+            Serving businesses in Pune and globally.
           </p>
         </div>
         <div className="flex flex-col md:items-center gap-2 text-sm">

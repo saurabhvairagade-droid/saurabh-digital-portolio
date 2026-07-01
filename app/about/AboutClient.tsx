@@ -11,7 +11,7 @@ const credentials = [
 export default function AboutClient() {
   const ref = useReveal<HTMLDivElement>();
   return (
-    <div ref={ref} className="mx-auto max-w-6xl px-6 py-24">
+    <div ref={ref} className="mx-auto max-w-6xl px-6 pt-40 pb-24">
       <div className="grid md:grid-cols-[300px_1fr] gap-12 items-start">
         <div className="reveal flex justify-center md:justify-start">
           <div className="relative">
