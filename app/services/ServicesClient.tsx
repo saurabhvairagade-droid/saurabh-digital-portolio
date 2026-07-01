@@ -1,5 +1,6 @@
 import { Code2, Target, PhoneCall } from "lucide-react";
 import { RevealWrapper } from "@/components/RevealWrapper";
+import Link from "next/link";
 
 const services = [
   {
@@ -48,14 +49,12 @@ export default function ServicesClient() {
             <h2 className="text-xl font-bold">{s.title}</h2>
             <p className="mt-3 text-sm text-muted-foreground leading-relaxed">{s.desc}</p>
             <div className="mt-6 text-2xl font-bold text-gradient-blue">{s.price}</div>
-            <a
-              href={s.href}
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/contact"
               className="mt-6 inline-flex w-full items-center justify-center rounded-md bg-primary px-4 py-2.5 text-sm font-semibold text-primary-foreground hover:opacity-90 transition"
             >
-              Buy Now
-            </a>
+              Discuss Project
+            </Link>
           </div>
         ))}
       </div>

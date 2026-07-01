@@ -2,6 +2,7 @@
 
 import { Award } from "lucide-react";
 import { useReveal } from "@/hooks/use-reveal";
+import Image from "next/image";
 
 const credentials = [
   "MS Project Management — University of the Cumberlands",
@@ -17,9 +18,12 @@ export default function AboutClient() {
           <div className="relative">
             <div className="absolute inset-0 rounded-full bg-primary/30 blur-2xl" />
             <div className="relative w-[280px] h-[280px] rounded-full overflow-hidden border-4 border-primary/30 bg-surface">
-              <img
-                src="/headshot.jpg"
+              <Image
+                src="/headshot.webp"
                 alt="Saurabh V."
+                width={280}
+                height={280}
+                priority
                 className="w-full h-full object-cover"
               />
             </div>

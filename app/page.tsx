@@ -17,7 +17,7 @@ export default function Home() {
   ];
 
   return (
-    <RevealWrapper className="relative overflow-hidden">
+    <RevealWrapper className="relative overflow-hidden flex-1 flex flex-col justify-center">
       {/* Animated background */}
       <div className="absolute inset-0 bg-hero-gradient pointer-events-none" />
       <FloatingBubbles />

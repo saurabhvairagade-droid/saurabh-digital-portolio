@@ -34,9 +34,11 @@ export const metadata: Metadata = {
     title: "Saurabh V. — Web Designer in Pune & AI Voice Agent Builder",
     description: "Custom React websites and AI voice receptionists in Pune. No monthly fees.",
     type: "website",
+    images: [{ url: '/headshot.webp' }],
   },
   twitter: {
     card: "summary_large_image",
+    images: ['/headshot.webp'],
   },
   verification: {
     google: "zIhBbGar6Graz6qWXFcC_idrrBsKOyjNxQCFAlO1iXo",
@@ -56,7 +58,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${spaceGrotesk.variable} antialiased`}>
+      <body className={`${inter.variable} ${spaceGrotesk.variable} antialiased min-h-screen flex flex-col`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -64,7 +66,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "ProfessionalService",
               "name": "Saurabh V. — Web Designer in Pune",
-              "image": "https://saurabh-web-designer-pune.netlify.app/headshot.jpg",
+              "image": "https://saurabh-web-designer-pune.netlify.app/headshot.webp",
               "url": "https://saurabh-web-designer-pune.netlify.app",
               "description": "Top-rated Web Designer in Pune. I build custom React websites and AI voice receptionists.",
               "address": {
@@ -78,7 +80,7 @@ export default function RootLayout({
           }}
         />
         <Navbar />
-        <main className="min-h-screen">
+        <main className="flex-1 flex flex-col">
           {children}
         </main>
         <Footer />

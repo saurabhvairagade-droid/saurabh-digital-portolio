@@ -11,7 +11,7 @@ const projects = [
     img: "https://picsum.photos/seed/braston/800/500",
   },
   {
-    title: "Shivali Digital",
+    title: "Shivali Digital Marketing Agency",
     desc: "Digital Marketing Agency website.",
     tags: ["React", "Vite", "Tailwind", "Netlify Forms"],
     href: "https://shivali-website.pages.dev",
@@ -21,7 +21,7 @@ const projects = [
     title: "Kartari Exim",
     desc: "Agricultural Export business website.",
     tags: ["React", "Vite", "Tailwind", "Netlify Forms"],
-    href: "https://kartari-exim-website.pages.dev",
+    href: "https://kartariexim.com",
     img: "https://picsum.photos/seed/kartari/800/500",
   },
   {
