@@ -5,8 +5,8 @@ import { useReveal } from "@/hooks/use-reveal";
 import Image from "next/image";
 
 const credentials = [
-  "MS Project Management — University of the Cumberlands",
-  "MS Mechanical Engineering — Cleveland State University",
+  "MS — University of the Cumberlands",
+  "MS — Cleveland State University",
 ];
 
 export default function AboutClient() {
