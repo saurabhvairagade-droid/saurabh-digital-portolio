@@ -8,7 +8,7 @@ const projects = [
     desc: "Strategic Advisory firm website.",
     tags: ["React", "Vite", "Tailwind", "Netlify Forms"],
     href: "https://brastonhall.pages.dev",
-    img: "https://picsum.photos/seed/braston/800/500",
+    img: "/braston-hall.webp",
   },
   {
     title: "Shivali Digital Marketing Agency",
@@ -22,7 +22,7 @@ const projects = [
     desc: "Agricultural Export business website.",
     tags: ["React", "Vite", "Tailwind", "Netlify Forms"],
     href: "https://kartariexim.com",
-    img: "https://picsum.photos/seed/kartari/800/500",
+    img: "/kartari-exim.webp",
   },
   {
     title: "AI Outbound Cold Calling Agent",
@@ -64,15 +64,24 @@ export default function PortfolioClient() {
             key={p.title}
             className="reveal group rounded-2xl border border-border bg-surface overflow-hidden card-shadow transition-all hover:-translate-y-1 hover:border-primary/50"
           >
-            <div className="relative aspect-[16/10] overflow-hidden bg-background">
-              <Image
-                src={p.img}
-                alt={p.title}
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-                priority={i < 3}
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
-              />
+            <div className="relative mx-4 mt-6 aspect-[16/10] overflow-hidden rounded-t-xl border border-b-0 border-border bg-background shadow-2xl shadow-black/10 group-hover:shadow-primary/5 transition-all">
+              {/* Browser Header */}
+              <div className="bg-surface/80 backdrop-blur-sm border-b border-border px-3 py-2 flex items-center gap-1.5">
+                <div className="w-2.5 h-2.5 rounded-full bg-red-500/80"></div>
+                <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/80"></div>
+                <div className="w-2.5 h-2.5 rounded-full bg-green-500/80"></div>
+              </div>
+              {/* Image container */}
+              <div className="relative w-full h-[calc(100%-28px)] overflow-hidden">
+                <Image
+                  src={p.img}
+                  alt={p.title}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  priority={i < 3}
+                  className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+                />
+              </div>
             </div>
             <div className="p-6">
               <h2 className="text-lg font-bold">{p.title}</h2>

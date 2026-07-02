@@ -2,20 +2,12 @@
 
 import Link from "next/link";
 import { RevealWrapper } from "@/components/RevealWrapper";
-import { Counter } from "@/components/home/Counter";
 import { FloatingBubbles } from "@/components/home/FloatingBubbles";
 import { Glass } from "@/components/ui/glass";
 import SplitText from "@/components/SplitText";
 import ShinyText from "@/components/ShinyText";
 
 export default function Home() {
-  const stats = [
-    { v: 6, suffix: "+", label: "Projects Delivered" },
-    { v: 2, suffix: "", label: "AI Agents Live" },
-    { v: 100, suffix: "%", label: "Code Ownership" },
-    { v: 0, prefix: "$", label: "Monthly Hosting" },
-  ];
-
   return (
     <RevealWrapper className="relative overflow-hidden flex-1 flex flex-col justify-center">
       {/* Animated background */}
@@ -67,22 +59,7 @@ export default function Home() {
           </Glass>
         </div>
 
-        <div className="reveal mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
-          {stats.map((s) => (
-            <div
-              key={s.label}
-              className="rounded-xl border border-border bg-surface/60 backdrop-blur p-5 text-center card-shadow"
-            >
-              <div className="text-3xl md:text-4xl font-bold text-gradient-blue">
-                <Counter end={s.v} suffix={s.suffix} prefix={s.prefix} />
-              </div>
-              <div className="mt-1 text-xs text-muted-foreground uppercase tracking-wider">
-                {s.label}
-              </div>
-            </div>
-          ))}
-        </div>
-        
+
         <div className="reveal mt-32 text-left bg-surface/30 border border-border rounded-2xl p-8 max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold mb-4">Premium Web Design Services in Pune</h2>
           <p className="text-muted-foreground mb-4">

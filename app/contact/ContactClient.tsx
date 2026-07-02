@@ -1,6 +1,6 @@
 "use client";
 
-import { Github, Linkedin, Briefcase, Mail, MapPin, Clock } from "lucide-react";
+import { Briefcase, Mail, MapPin, Clock } from "lucide-react";
 import { useReveal } from "@/hooks/use-reveal";
 
 export default function ContactClient() {
@@ -75,8 +75,6 @@ export default function ContactClient() {
           </div>
 
           <div className="flex gap-3">
-            <SocialIcon href="https://github.com" icon={Github} label="GitHub" />
-            <SocialIcon href="https://linkedin.com" icon={Linkedin} label="LinkedIn" />
             <SocialIcon href="https://www.upwork.com/freelancers/~01af1d092d3c9914ab?mp_source=share" icon={Briefcase} label="Upwork" />
           </div>
 
